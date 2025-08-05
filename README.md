@@ -8,7 +8,7 @@ AmigaDOS arguments pattern: `SplitString STRING/A,SEPARATOR=SEP/K,INDEX/K/N`
 
 * `STRING` – string to split. Must be doubleqoted if contains spaces. If not specified, SplitString reads a line from the standard input and strips the newline character at end (if present) before processing.
 * `SEPARATOR` – a sequence of characters separating string parts. Optional, defaults to a single space.
-* `INDEX` – index of substring to output. Positive numbers index from the start (0 is the first substring). Negative numbers index from the end (-1 is the last substring).
+* `INDEX` – index of substring to output. Numeric argument. Positive numbers index from the start (0 is the first substring). Negative numbers index from the end (-1 is the last substring). Optional, defaults to 0.
 
 ## Results
 
