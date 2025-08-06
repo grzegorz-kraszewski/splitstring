@@ -24,7 +24,10 @@ class App
 
 App::App() : str(NULL), separator(" "), index(0)
 {
-
+	if (args.Specified(ARG_STRING)) str = args[ARG_STRING];
+	// else str = read line from stdin
+	if (args.Specified(ARG_SEPARATOR)) separator = args[ARG_SEPARATOR];
+	if (args.Specified(ARG_INDEX)) index = args(ARG_INDEX); 
 }
 
 
@@ -36,6 +39,7 @@ App::~App()
 
 int32 App::Run()
 {
+	Printf("string: '%s'\nseparator: '%s'\nindex: %ld\n", str, separator, index);
 	return RETURN_OK;
 }
 
