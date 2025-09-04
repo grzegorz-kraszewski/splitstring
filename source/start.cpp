@@ -55,7 +55,7 @@ __attribute__((saveds)) int32 Start(void)
 		ReplyMsg(&wbmsg->sm_Message);
 	}
 
-	return (ULONG)result;
+	return result;
 }
 
 
